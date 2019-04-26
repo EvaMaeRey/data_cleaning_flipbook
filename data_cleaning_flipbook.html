@@ -72,7 +72,21 @@ count: false
 .column[.content[
 
 ```r
-*htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2)
+*url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+```
+]]
+.column[.content.center[
+
+]]
+---
+class: split-40
+count: false
+
+.column[.content[
+
+```r
+url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+*htmltab::htmltab(doc = url, which = 2)
 ```
 ]]
 .column[.content.center[
@@ -305,7 +319,8 @@ count: false
 .column[.content[
 
 ```r
-htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2) %&gt;% 
+url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+htmltab::htmltab(doc = url, which = 2) %&gt;% 
 * as_tibble()
 ```
 ]]
@@ -541,7 +556,8 @@ count: false
 .column[.content[
 
 ```r
-htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2) %&gt;% 
+url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+htmltab::htmltab(doc = url, which = 2) %&gt;% 
   as_tibble() %&gt;% 
 * janitor::clean_names(case = "snake")
 ```
@@ -778,7 +794,8 @@ count: false
 .column[.content[
 
 ```r
-htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2) %&gt;% 
+url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+htmltab::htmltab(doc = url, which = 2) %&gt;% 
   as_tibble() %&gt;% 
   janitor::clean_names(case = "snake") %&gt;% 
 * mutate(capture = str_replace_all(capture, ",", ""))
@@ -1016,7 +1033,8 @@ count: false
 .column[.content[
 
 ```r
-htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2) %&gt;% 
+url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+htmltab::htmltab(doc = url, which = 2) %&gt;% 
   as_tibble() %&gt;% 
   janitor::clean_names(case = "snake") %&gt;% 
   mutate(capture = str_replace_all(capture, ",", "")) %&gt;% 
@@ -1255,7 +1273,8 @@ count: false
 .column[.content[
 
 ```r
-htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2) %&gt;% 
+url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+htmltab::htmltab(doc = url, which = 2) %&gt;% 
   as_tibble() %&gt;% 
   janitor::clean_names(case = "snake") %&gt;% 
   mutate(capture = str_replace_all(capture, ",", "")) %&gt;% 
@@ -1495,7 +1514,8 @@ count: false
 .column[.content[
 
 ```r
-htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2) %&gt;% 
+url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+htmltab::htmltab(doc = url, which = 2) %&gt;% 
   as_tibble() %&gt;% 
   janitor::clean_names(case = "snake") %&gt;% 
   mutate(capture = str_replace_all(capture, ",", "")) %&gt;% 
@@ -1736,7 +1756,8 @@ count: false
 .column[.content[
 
 ```r
-htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2) %&gt;% 
+url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+htmltab::htmltab(doc = url, which = 2) %&gt;% 
   as_tibble() %&gt;% 
   janitor::clean_names(case = "snake") %&gt;% 
   mutate(capture = str_replace_all(capture, ",", "")) %&gt;% 
@@ -1978,7 +1999,8 @@ count: false
 .column[.content[
 
 ```r
-htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2) %&gt;% 
+url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+htmltab::htmltab(doc = url, which = 2) %&gt;% 
   as_tibble() %&gt;% 
   janitor::clean_names(case = "snake") %&gt;% 
   mutate(capture = str_replace_all(capture, ",", "")) %&gt;% 
@@ -2221,7 +2243,8 @@ count: false
 .column[.content[
 
 ```r
-htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2) %&gt;% 
+url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+htmltab::htmltab(doc = url, which = 2) %&gt;% 
   as_tibble() %&gt;% 
   janitor::clean_names(case = "snake") %&gt;% 
   mutate(capture = str_replace_all(capture, ",", "")) %&gt;% 
@@ -2465,7 +2488,8 @@ count: false
 .column[.content[
 
 ```r
-htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2) %&gt;% 
+url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+htmltab::htmltab(doc = url, which = 2) %&gt;% 
   as_tibble() %&gt;% 
   janitor::clean_names(case = "snake") %&gt;% 
   mutate(capture = str_replace_all(capture, ",", "")) %&gt;% 
@@ -2709,7 +2733,8 @@ count: false
 .column[.content[
 
 ```r
-htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2) %&gt;% 
+url &lt;- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+htmltab::htmltab(doc = url, which = 2) %&gt;% 
   as_tibble() %&gt;% 
   janitor::clean_names(case = "snake") %&gt;% 
   mutate(capture = str_replace_all(capture, ",", "")) %&gt;% 

@@ -64,7 +64,8 @@ The date come from the second table on the Wikipedia page [Fishing Industry by C
 ---
 
 ```{r clean_wikipedia_fisheries, eval = F, echo = F}
-htmltab::htmltab(doc = "https://en.wikipedia.org/wiki/Fishing_industry_by_country", which = 2) %>% 
+url <- "https://en.wikipedia.org/wiki/Fishing_industry_by_country"
+htmltab::htmltab(doc = url, which = 2) %>% 
   as_tibble() %>% 
   janitor::clean_names(case = "snake") %>% 
   mutate(capture = str_replace_all(capture, ",", "")) %>% 
